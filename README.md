@@ -1,4 +1,7 @@
 # News- Lightning Component (Only for Salesforce.com)
+
+# Working Demo:-
+<img src="News-Lightning Component Working Overview.gif" alt="Working Demo GIF"/><br/>
 # Overview:-
   <p>
    i)  This component is used to display any publicly available news channel website. To use this we need only 2 things Channel Name and &nbsp;&nbsp;&nbsp;&nbsp;URL/Website-link     Address.<br/>
@@ -14,6 +17,4 @@
 <div>
   <h2>List of Supported News Channel:-</h2>
       <a href='prafullnamespac__News_Website_Details__c.csv' style="margin-left:2%"><u>Download/View CSV File</u></a><br/>
-<div><br/>
-# Working Demo:-
-<img src="News-Lightning Component Working Overview.gif" alt="Working Demo GIF"/>
+<div>
