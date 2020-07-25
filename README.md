@@ -12,7 +12,7 @@
   2. Make sure you're website is compatible into IFrame Tag, Because Private website 'X-Frame-Options' to 'deny'. So , you need to integrate this websites through API integration.
 </div><br/>
 # Working Demo:-
-<video width="320px" height="240px" poster="poster.png" controls>
+<video width="320px" height="240px" poster="n.jpg" controls>
   <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
   <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
 </video>
