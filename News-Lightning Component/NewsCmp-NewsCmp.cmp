@@ -1,0 +1,110 @@
+<aura:component controller="NewsCmpCls" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <!-- Date :- 22/07/2020 -->
+    <!-- Name :- News Lightning Component -->
+    <!-- Developer Name :- Prafull Jain -->
+    <!-- Developer Email :- prafulljaincp@gmail.com -->
+    
+	    
+    <!-- Attributes specific to component-->
+    <aura:attribute name="inputValue" type="String" />
+    <aura:attribute name="results" type="List" />
+    <aura:attribute name="openDropDown" type="Boolean" default="false" />
+    <aura:attribute name="selectedOption" type="String" />
+    <aura:attribute name="inputSearchFunction" type="Object" />
+    <aura:attribute name="label" type="String" default="Enter News Channel Name" />
+    
+    <!-- Attributes Specific to IFrame Element inside this Component -->
+    
+    <aura:attribute name="iframeUrl" type="String" />
+    <aura:attribute name="width" type="String" default="100%" />
+    <aura:attribute name="height" type="String" default="1000px" />
+    <aura:attribute name="scrolling" type="String" default="auto"/>
+    <aura:attribute name="style" type="String" default="border: none; overflow: scroll;
+                                                        background:white"/>
+    <aura:attribute name="sandbox" type="String" default="allow-same-origin allow-scripts
+                                                          allow-popups allow-forms" />
+    <aura:attribute name="elemoper" type="Boolean" default="false" />
+    
+    
+    <lightning:card>
+		<!-- Title of Component -->
+		<center style="font-size:16pt">   
+            <lightning:icon iconName="action:google_news" size="small" style="margin-right:0.3rem;padding:0.3rem" alternativeText="Google_News Icon" title="Logo" />
+            <u style="text-decoration-style: wavy;color: red;">
+                <b style="text-decoration-style: double;color: blue;text-shadow: 9px 3px 20px lightslategrey;">News Lightning Component</b></u>        
+        </center>
+           
+        <div class="slds-form-element" style="margin:5px">
+            <!-- Label of Component -->
+			<label class="slds-form-element__label" for="combobox-id-21">
+                <u style="color: blue;text-decoration-style: double;"><b style="font-size: 13pt;color: red;">{!v.label}</b></u>
+            </label> 
+            
+			<div class="slds-form-element__control" style="margin-top:5px">
+                <div class="slds-combobox_container">
+				
+                    <div class="{! v.openDropDown ? 'slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open' : 'slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click'}"
+                         aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                        
+						<div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+							<!-- This will take the news channel name and calls the searchHandler method in JS Controller -->
+								<input type="text"
+                                   class="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
+                                   id="combobox-id-21" aria-autocomplete="list" aria-controls="listbox-id-11"
+                                   autoComplete="off" onkeyup="{!c.searchHandler}" role="textbox" placeholder="Search..."
+                                   value="{!v.inputValue}" />
+							<!-- This will opens the search icon if the selectedOption isn't false -->
+                            <aura:if isTrue="{! empty(v.selectedOption)}">
+                                <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                                    <lightning:icon iconName="utility:search" size="x-small" />
+                                </span>
+							<!-- This will opens the Clear icon(X) option that calls the JS Controller method & erase the entered news channel name -->
+                            <aura:set attribute="else">
+								<button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+                                            title="Clear the text input" onclick="{!c.clearOption}">
+                                    <lightning:icon iconName="utility:clear" size="x-small" />
+                                </button>
+                            </aura:set>
+                            </aura:if>
+                        </div>
+						<!-- This Div tag display all the list of records based on your entered news channel name & also calls the
+							 optionClickHandler method in JS Controller to open the website -->
+                        <div id="listbox-id-11" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+                             role="listbox">
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <aura:iteration items="{!v.results}" var="result">
+                                    <li role="presentation" class="slds-listbox__item" data-id="{!result.Id}"
+                                        data-value="{!result.Name}" data-link="{!result.Link}" onclick="{!c.optionClickHandler}">
+                                        <div id="{!result.Id}"
+                                             class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                                             role="option">
+                                            <span class="slds-media__figure slds-listbox__option-icon"></span>
+                                            <span class="slds-media__body">
+                                                <span class="slds-truncate" title="All Opportunities">
+                                                    <span>{!result.Name}</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        
+                                    </li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                    </div>
+                    
+					<!-- IFrame tag for the website of entered channel name only when elemoper boolean attribute is set to true -->
+                    <aura:if isTrue="{!v.elemoper}">
+                        <br/><br/>
+                        <iframe src="{!v.iframeUrl}"
+                                width="{!v.width}"
+                                height="{!v.height}"
+                                style="{!v.style}"
+                                sandbox="{!v.sandbox}"
+                                scrolling="{!v.scrolling}" />
+                    </aura:if>
+					
+                </div>
+            </div>
+        </div>
+    </lightning:card>
+</aura:component>
