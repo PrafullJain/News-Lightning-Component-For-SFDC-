@@ -13,7 +13,7 @@
 </div><br/>
 <div>
   <h2>List of Supported News Channel:-</h2>
-      <a href='prafullnamespac__News_Website_Details__c.csv' style="margin-left:2%"><ul><u>Download/View CSV File</u></ul></a><br/>
+      <a href='prafullnamespac__News_Website_Details__c.csv' style="margin-left:2%"><u>Download/View CSV File</u></a><br/>
 <div><br/>
 # Working Demo:-
 <img src="News-Lightning Component Working Overview.gif" alt="Working Demo GIF"/>
