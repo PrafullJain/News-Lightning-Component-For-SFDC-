@@ -10,13 +10,11 @@
   <h1>Limitation:-</h1>
     1. At least 3 letter will need tp enter as news channel name.<br/>
     2. Make sure you're website is compatible into IFrame Tag, Because Private website 'X-Frame-Options' to 'deny'. So , you need to integrate this websites through API    integration.
-  </h1>
 </div><br/>
 <div>
-  <h2>List of Supported News Channel:-
+  <h2>List of Supported News Channel:-</h2>
     <br/>
-      <a href='prafullnamespac__News_Website_Details__c.csv'>Download/View CSV File</a><br/>
-  </h2>
+      <a href='prafullnamespac__News_Website_Details__c.csv' style="margin-left:3%">Download/View CSV File</a><br/>
 <div><br/>
 # Working Demo:-
 <img src="News-Lightning Component Working Overview.gif" alt="Working Demo GIF"/>
