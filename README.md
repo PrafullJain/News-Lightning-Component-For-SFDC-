@@ -8,7 +8,7 @@
    i) This component is used to display any publicly available news channel website. To use this we need only 2 things Channel Name and URL/Website-link Address.<br/>
   ii) In this we also provide test-class for both Positive/Negative behaviour.<br/>
   iii) Please change the Namespace of this component(prafullnamespac__) with your Namespace of SFDC organization or just remove it(If u already not created).<br/>
-  iv) If anyone wants it as Un-Manged Package then just email me with your name,mobile number.<br/>
+  iv) If anyone wants it as <u>Un-Manged Package</u> then just email me with your name,mobile number.<br/>
   </p>
 <div>
   <h1>Limitation:-</h1>
