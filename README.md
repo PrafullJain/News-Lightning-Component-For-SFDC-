@@ -1,4 +1,8 @@
 # News- Lightning Component (Only for Salesforce.com)
+<video width="320" height="240" poster="NLC.png" controls>
+  <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
+  <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
+</video>
 # Overview:-
   <p>
    i) This component is used to display any publicly available news channel website. To use this we need only 2 things Channel Name and URL/Website-link Address.<br/>
@@ -11,7 +15,4 @@
   1. At least 3 letter will need tp enter as news channel name.<br/>
   2. Make sure you're website is compatible into IFrame Tag, Because Private website 'X-Frame-Options' to 'deny'. So , you need to integrate this websites through API integration.
 </div><br/>
-<video width="320" height="240" poster="NLC.png" controls>
-  <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
-  <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
-</video>
+
