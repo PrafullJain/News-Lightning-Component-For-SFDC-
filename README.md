@@ -8,14 +8,15 @@
   </p>
 <div>
   <h1>Limitation:-</h1>
-  1. At least 3 letter will need tp enter as news channel name.<br/>
-  2. Make sure you're website is compatible into IFrame Tag, Because Private website 'X-Frame-Options' to 'deny'. So , you need to integrate this websites through API integration.
-</div><br/><br/>
-
-<h2>List of Supported News Channel
-  <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/>
-  <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/>
-  
+    1. At least 3 letter will need tp enter as news channel name.<br/>
+    2. Make sure you're website is compatible into IFrame Tag, Because Private website 'X-Frame-Options' to 'deny'. So , you need to integrate this websites through API    integration.
+  </h1>
+</div><br/>
+<div>
+  <h2>List of Supported News Channel:-<br/>
+    <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/>
+    <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/>
   </h2>
+<div><br/>
 # Working Demo:-
 <img src="News-Lightning Component Working Overview.gif" alt="Working Demo GIF"/>
