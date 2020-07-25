@@ -1,5 +1,5 @@
 # News- Lightning Component (Only for Salesforce.com)
-<video width="320" height="240" poster="NLC.png" controls>
+<video width="320px" height="240px" poster="poster.png" controls>
   <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
   <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
 </video>
