@@ -13,8 +13,9 @@
   </h1>
 </div><br/>
 <div>
-  <h2>List of Supported News Channel:-<br/>
-    1. <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/><br/>
+  <h2>List of Supported News Channel:-
+    <br/>
+    1. <a href='prafullnamespac__News_Website_Details__c.csv'>Download CSV File</a><br/>
     2. <a href='prafullnamespac__News_Website_Details__c.csv'>View/Download PDF File</a><br/>
   </h2>
 <div><br/>
