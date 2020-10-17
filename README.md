@@ -2,8 +2,8 @@
 
 # Working Demo:-
 <video width="320" height="240" controls>
-  <source src="News-Lightning Component Working Overview.mp4.mp4" type="video/mp4">
-  <source src="News-Lightning Component Working Overview.mp4.ogg" type="video/ogg">
+  <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
+  <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
 # Overview:-
