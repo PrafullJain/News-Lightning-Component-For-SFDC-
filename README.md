@@ -2,6 +2,11 @@
 
 # Working Demo:-
 <img src="News-Lightning Component Working Overview.gif" width="600px" height="300px" alt="Working Demo GIF"/><br/>
+<video width="320" height="240" controls>
+  <source src="News-Lightning Component Working Overview.mp4.mp4" type="video/mp4">
+  <source src="News-Lightning Component Working Overview.mp4.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
 # Overview:-
   <p>
    i)  This component is used to display any publicly available news channel website. To use this we need only 2 things Channel Name and URL/Website-link     Address.<br/>
