@@ -6,6 +6,8 @@
   <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
+<img src="News-Lightning Component Working Overview.gif" alt="News Lightning Component Working Overview" width="500px" height="600px">
+
 # Overview:-
   <p>
    i)  This component is used to display any publicly available news channel website. To use this we need only 2 things Channel Name and URL/Website-link     Address.<br/>
