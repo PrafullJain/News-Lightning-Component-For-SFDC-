@@ -1,12 +1,7 @@
 # News- Lightning Component (Only for Salesforce.com)
 
 # Working Demo:-
-<video width="320px" height="240px" controls>
-  <source src="News-Lightning Component Working Overview.mp4" type="video/mp4">
-  <source src="News-Lightning Component Working Overview.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video>
-<img src="News-Lightning Component Working Overview.gif" alt="News Lightning Component Working Overview" width="500px" height="600px">
+<img src="News-Lightning Component Working Overview.gif" alt="News Lightning Component Working Overview" width="600px" height="300px">
 
 # Overview:-
   <p>
